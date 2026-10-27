@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне — Aidana Akunova</title>
+    <meta name="description" content="Узнайте больше о моём пути в веб-разработке, образовании и целях.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                AIDANA
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link active">Обо мне</a></li>
+                    <li><a href="skills.html" class="nav-link">Навыки</a></li>
+                    <li><a href="projects.html" class="nav-link">Проекты</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Обо мне</h1>
+            <p class="page-description fade-in-delay-1">Моя история в веб-разработке</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section about-content">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Profile Card -->
+                <div class="about-profile" data-animate>
+                    <div class="profile-image">
+                        <img src="assets/profile.jpg" alt="Aidana Akunova" class="profile-photo">
+                    </div>
+                    <h2 class="profile-name">Aidana Akunova</h2>
+                    <p class="profile-title">Frontend Developer</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">8+</span>
+                            <span class="stat-label">Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2026</span>
+                            <span class="stat-label">Год начала</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="about-text">
+                    <div class="about-section" data-animate>
+                        <div class="section-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="about-subtitle">Кто я</h3>
+                        <p class="about-paragraph">
+                            Привет! Меня зовут Айдана Акунова, и я начинающий веб-разработчик с большим энтузиазмом к созданию современных и функциональных веб-сайтов. Мой путь в IT начался с желания понять, как устроены веб-приложения, которыми мы пользуемся каждый день.
+                        </p>
+                        <p class="about-paragraph">
+                            Я верю, что веб-разработка — это не просто код, а искусство создания удобных и красивых решений для пользователей. Каждый проект для меня — это возможность учиться, расти и создавать что-то ценное.
+                        </p>
+                    </div>
+
+                    <div class="about-section" data-animate>
+                        <div class="section-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="about-subtitle">Чему я учусь</h3>
+                        <p class="about-paragraph">
+                            Сейчас я активно изучаю основы Frontend-разработки: HTML, CSS и JavaScript. Моя цель — не просто знать синтаксис, а понимать принципы создания качественных веб-приложений.
+                        </p>
+                        <ul class="about-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Семантическая вёрстка и доступность
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Адаптивный дизайн и CSS Grid, Flexbox
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                JavaScript и работа с DOM
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Контроль версий с Git и GitHub
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Лучшие практики веб-разработки
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-section" data-animate>
+                        <div class="section-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="about-subtitle">Мои цели</h3>
+                        <p class="about-paragraph">
+                            Моя главная цель — стать профессиональным Frontend-разработчиком, который создаёт качественные и современные веб-приложения. Я стремлюсь постоянно развиваться и осваивать новые технологии.
+                        </p>
+                        <div class="goals-grid">
+                            <div class="goal-card">
+                                <div class="goal-number">01</div>
+                                <h4 class="goal-title">Ближайшая цель</h4>
+                                <p class="goal-description">Углубить знания JavaScript и создать портфолио из 10+ проектов</p>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-number">02</div>
+                                <h4 class="goal-title">Среднесрочная</h4>
+                                <p class="goal-description">Изучить React и современные фреймворки для разработки</p>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-number">03</div>
+                                <h4 class="goal-title">Долгосрочная</h4>
+                                <p class="goal-description">Получить первую работу Frontend-разработчиком и расти в профессии</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section interests-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Чем я увлекаюсь</h2>
+                <p class="section-subtitle">Помимо программирования</p>
+            </div>
+            
+            <div class="interests-grid">
+                <div class="interest-card" data-animate>
+                    <div class="interest-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="interest-title">Обучение</h3>
+                    <p class="interest-description">Люблю изучать новые технологии и читать статьи о веб-разработке</p>
+                </div>
+                
+                <div class="interest-card" data-animate>
+                    <div class="interest-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="interest-title">Дизайн</h3>
+                    <p class="interest-description">Изучаю UI/UX дизайн и создаю красивые интерфейсы</p>
+                </div>
+                
+                <div class="interest-card" data-animate>
+                    <div class="interest-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="interest-title">Творчество</h3>
+                    <p class="interest-description">Работа над проектами вдохновляет меня на новые идеи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box" data-animate>
+                <h2 class="cta-title">Хотите узнать больше?</h2>
+                <p class="cta-description">Посмотрите мои проекты или свяжитесь со мной</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        Мои проекты
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        AIDANA AKUNOVA
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-description">
+                        Начинающий Frontend-разработчик.<br>
+                        Создаю современные сайты и превращаю идеи в реальность.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Навигация</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about.html">Обо мне</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="projects.html">Проекты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Контакты</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://t.me/@nvdna001" target="_blank" rel="noopener noreferrer">
+                                    Telegram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/keshhha01" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </li>
+                            <li><a href="contact.html">Связаться</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Информация</h4>
+                        <ul class="footer-list">
+                            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Aidana Akunova. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

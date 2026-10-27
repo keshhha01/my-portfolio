@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты — Aidana Akunova</title>
+    <meta name="description" content="Портфолио моих веб-разработок и мини-проектов: игры, приложения и интерактивные инструменты.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                AIDANA
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="skills.html" class="nav-link">Навыки</a></li>
+                    <li><a href="projects.html" class="nav-link active">Проекты</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Мои проекты</h1>
+            <p class="page-description fade-in-delay-1">Портфолио веб-разработок и интерактивных приложений</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section">
+        <div class="container">
+            <div class="projects-full-grid">
+                <!-- Project 1: Tic-Tac-Toe -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Tic-Tac-Toe</h2>
+                            <div class="project-number">01</div>
+                        </div>
+                        <p class="project-description-full">
+                            Классическая игра в крестики-нолики с интерактивным интерфейсом. Реализована логика определения победителя, 
+                            отслеживание ходов и возможность начать новую игру. Адаптивный дизайн для комфортной игры на любом устройстве.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Игра для двух игроков
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Автоматическое определение победителя
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Кнопка перезапуска игры
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Dark Mode -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Dark Mode</h2>
+                            <div class="project-number">02</div>
+                        </div>
+                        <p class="project-description-full">
+                            Переключатель между светлой и тёмной темами с сохранением выбора пользователя в localStorage. 
+                            Плавные анимации перехода и красивый интерфейс с иконками солнца и луны.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Плавное переключение тем
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Сохранение настроек
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Адаптивные цвета
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS Variables</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Calculator -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                                <line x1="8" y1="6" x2="16" y2="6"/>
+                                <line x1="8" y1="10" x2="16" y2="10"/>
+                                <line x1="8" y1="14" x2="16" y2="14"/>
+                                <line x1="8" y1="18" x2="16" y2="18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Calculator</h2>
+                            <div class="project-number">03</div>
+                        </div>
+                        <p class="project-description-full">
+                            Функциональный калькулятор с основными математическими операциями. Современный дизайн с анимированными кнопками, 
+                            поддержка клавиатуры и обработка ошибок ввода.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Базовые операции (+, -, ×, ÷)
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Работа с десятичными числами
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Кнопка очистки дисплея
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">Events</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Memory Game -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Memory Game</h2>
+                            <div class="project-number">04</div>
+                        </div>
+                        <p class="project-description-full">
+                            Игра на развитие памяти с карточками. Нужно найти все пары одинаковых карточек. 
+                            Красивые анимации переворота, подсчёт ходов и времени, разные уровни сложности.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Анимация переворота карточек
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Подсчёт ходов и времени
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Случайная генерация пар
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS Animations</span>
+                            <span class="tag">Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Drawing App -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                <path d="M2 2l7.586 7.586"/>
+                                <circle cx="11" cy="11" r="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Drawing App</h2>
+                            <div class="project-number">05</div>
+                        </div>
+                        <p class="project-description-full">
+                            Простое приложение для рисования с использованием HTML5 Canvas. Выбор цвета, толщины линии, 
+                            ластик и возможность сохранить рисунок. Поддержка сенсорных экранов.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Выбор цвета и толщины кисти
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Инструмент ластика
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Сохранение рисунка
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML5 Canvas</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Touch Events</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Rock Paper Scissors -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Rock Paper Scissors</h2>
+                            <div class="project-number">06</div>
+                        </div>
+                        <p class="project-description-full">
+                            Классическая игра "Камень, ножницы, бумага" против компьютера. Анимированный выбор, 
+                            подсчёт очков, таблица результатов и красивый интерфейс с эмодзи.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Игра против компьютера
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Анимации выбора и результата
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Подсчёт очков
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Game Logic</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: Pomodoro Timer -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Pomodoro Timer</h2>
+                            <div class="project-number">07</div>
+                        </div>
+                        <p class="project-description-full">
+                            Таймер для учёбы и работы по методу Pomodoro. Настраиваемые интервалы работы и отдыха, 
+                            звуковые уведомления, отслеживание количества завершённых сессий.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Настраиваемые интервалы
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Звуковые уведомления
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Статистика сессий
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Timers</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8: Quiz App -->
+                <article class="project-card-full" data-animate>
+                    <div class="project-image-full">
+                        <div class="project-image-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-header">
+                            <h2 class="project-title-full">Quiz App</h2>
+                            <div class="project-number">08</div>
+                        </div>
+                        <p class="project-description-full">
+                            Интерактивное приложение-викторина с вопросами и вариантами ответов. Отображение правильных и неправильных ответов, 
+                            подсчёт баллов, таймер и экран с результатами.
+                        </p>
+                        <div class="project-features">
+                            <h4 class="features-title">Возможности:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Множественный выбор ответов
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Подсчёт правильных ответов
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Экран с итоговыми результатами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">JSON Data</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline" onclick="alert('Добавьте ссылку на GitHub репозиторий'); return false;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box" data-animate>
+                <h2 class="cta-title">Хотите обсудить проект?</h2>
+                <p class="cta-description">Свяжитесь со мной для сотрудничества</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    Написать мне
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        AIDANA AKUNOVA
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-description">
+                        Начинающий Frontend-разработчик.<br>
+                        Создаю современные сайты и превращаю идеи в реальность.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Навигация</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about.html">Обо мне</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="projects.html">Проекты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Контакты</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://t.me/@nvdna001" target="_blank" rel="noopener noreferrer">
+                                    Telegram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/keshhha01" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </li>
+                            <li><a href="contact.html">Связаться</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Информация</h4>
+                        <ul class="footer-list">
+                            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Aidana Akunova. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

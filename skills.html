@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навыки — Aidana Akunova</title>
+    <meta name="description" content="Мои навыки веб-разработки: HTML, CSS, JavaScript, Git и GitHub.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                AIDANA
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="skills.html" class="nav-link active">Навыки</a></li>
+                    <li><a href="projects.html" class="nav-link">Проекты</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Мои навыки</h1>
+            <p class="page-description fade-in-delay-1">Технологии и инструменты, которыми я владею</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <!-- Technical Skills -->
+            <div class="skills-category" data-animate>
+                <h2 class="category-title">Технологии</h2>
+                <div class="skills-detailed-grid">
+                    <div class="skill-detailed-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-large">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                    <polyline points="2 17 12 22 22 17"/>
+                                    <polyline points="2 12 12 17 22 12"/>
+                                </svg>
+                            </div>
+                            <div class="skill-title-group">
+                                <h3 class="skill-detailed-name">HTML5</h3>
+                                <p class="skill-level">Продвинутый</p>
+                            </div>
+                        </div>
+                        <p class="skill-detailed-description">
+                            Создание семантической структуры веб-страниц, работа с формами, мультимедиа и современными HTML5 API.
+                        </p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Семантика</span>
+                            <span class="skill-tag">Формы</span>
+                            <span class="skill-tag">Доступность</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-detailed-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-large">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="skill-title-group">
+                                <h3 class="skill-detailed-name">CSS3</h3>
+                                <p class="skill-level">Продвинутый</p>
+                            </div>
+                        </div>
+                        <p class="skill-detailed-description">
+                            Адаптивная вёрстка, Flexbox, Grid, анимации, переходы и создание современных пользовательских интерфейсов.
+                        </p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%"></div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flexbox</span>
+                            <span class="skill-tag">Grid</span>
+                            <span class="skill-tag">Анимации</span>
+                            <span class="skill-tag">Адаптивность</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-detailed-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-large">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <div class="skill-title-group">
+                                <h3 class="skill-detailed-name">JavaScript</h3>
+                                <p class="skill-level">Средний</p>
+                            </div>
+                        </div>
+                        <p class="skill-detailed-description">
+                            Работа с DOM, обработка событий, асинхронное программирование, создание интерактивных веб-приложений.
+                        </p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 65%"></div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ES6+</span>
+                            <span class="skill-tag">DOM</span>
+                            <span class="skill-tag">Events</span>
+                            <span class="skill-tag">Async</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Workflow -->
+            <div class="skills-category" data-animate>
+                <h2 class="category-title">Инструменты и рабочий процесс</h2>
+                <div class="skills-detailed-grid">
+                    <div class="skill-detailed-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-large">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="6"/>
+                                    <circle cx="12" cy="12" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="skill-title-group">
+                                <h3 class="skill-detailed-name">Git</h3>
+                                <p class="skill-level">Средний</p>
+                            </div>
+                        </div>
+                        <p class="skill-detailed-description">
+                            Контроль версий, работа с ветками, коммиты, слияния и управление историей изменений проекта.
+                        </p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Commits</span>
+                            <span class="skill-tag">Branches</span>
+                            <span class="skill-tag">Merge</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-detailed-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-large">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </div>
+                            <div class="skill-title-group">
+                                <h3 class="skill-detailed-name">GitHub</h3>
+                                <p class="skill-level">Средний</p>
+                            </div>
+                        </div>
+                        <p class="skill-detailed-description">
+                            Хостинг проектов, совместная разработка, использование GitHub Pages для публикации веб-сайтов.
+                        </p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Repositories</span>
+                            <span class="skill-tag">Pages</span>
+                            <span class="skill-tag">Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category" data-animate>
+                <h2 class="category-title">Дополнительные навыки</h2>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 3v18"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">Адаптивный дизайн</h3>
+                        <p class="soft-skill-description">Создание сайтов, которые отлично выглядят на всех устройствах</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="12" y1="18" x2="12" y2="12"/>
+                                <line x1="9" y1="15" x2="15" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">Кросс-браузерность</h3>
+                        <p class="soft-skill-description">Обеспечение корректной работы в разных браузерах</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">UX/UI принципы</h3>
+                        <p class="soft-skill-description">Понимание основ пользовательского опыта и интерфейса</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">Оптимизация</h3>
+                        <p class="soft-skill-description">Улучшение производительности и скорости загрузки</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">Командная работа</h3>
+                        <p class="soft-skill-description">Готовность к совместной разработке проектов</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="soft-skill-name">Самообучение</h3>
+                        <p class="soft-skill-description">Постоянное изучение новых технологий и подходов</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path -->
+            <div class="skills-category" data-animate>
+                <h2 class="category-title">Планы на изучение</h2>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="learning-status">В планах</div>
+                        <h3 class="learning-name">React</h3>
+                        <p class="learning-description">Популярная библиотека для создания пользовательских интерфейсов</p>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-status">В планах</div>
+                        <h3 class="learning-name">TypeScript</h3>
+                        <p class="learning-description">Типизированный JavaScript для больших проектов</p>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-status">В планах</div>
+                        <h3 class="learning-name">Sass/SCSS</h3>
+                        <p class="learning-description">Препроцессор CSS для улучшения стилизации</p>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-status">В планах</div>
+                        <h3 class="learning-name">Webpack</h3>
+                        <p class="learning-description">Сборщик модулей для современных веб-приложений</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box" data-animate>
+                <h2 class="cta-title">Посмотрите мои проекты</h2>
+                <p class="cta-description">Узнайте, как я применяю эти навыки на практике</p>
+                <a href="projects.html" class="btn btn-primary btn-large">
+                    Все проекты
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        AIDANA AKUNOVA
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-description">
+                        Начинающий Frontend-разработчик.<br>
+                        Создаю современные сайты и превращаю идеи в реальность.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Навигация</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about.html">Обо мне</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="projects.html">Проекты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Контакты</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://t.me/@nvdna001" target="_blank" rel="noopener noreferrer">
+                                    Telegram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/keshhha01" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </li>
+                            <li><a href="contact.html">Связаться</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Информация</h4>
+                        <ul class="footer-list">
+                            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Aidana Akunova. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
